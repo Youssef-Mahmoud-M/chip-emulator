@@ -18,7 +18,7 @@ fn main() {
                 return;
             };
             if !exists {
-                eprintln!("Please pass a assembly valid file");
+                eprintln!("Please pass a valid assembly file");
                 return;
             }
             let Ok(contents) = fs::read_to_string(file) else {
@@ -63,7 +63,7 @@ fn main() {
                 return;
             };
             if !exists {
-                eprintln!("Please pass a assembly valid file");
+                eprintln!("Please pass a valid assembly file");
                 return;
             }
 

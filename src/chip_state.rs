@@ -51,7 +51,7 @@ impl ChipState {
     }
 
     fn trigger_invalid_memory_address_exception(&mut self) {
-        println!("Program triggered an invalid memeory address exception");
+        println!("Program triggered an invalid memory address exception");
         self.trigger_exception(2);
     }
 
@@ -151,7 +151,7 @@ impl ChipState {
             return;
         }
         self.port_out = self.registers[rsrc1 as usize];
-        println!("Program outputed: {}", self.port_out);
+        println!("Program output: {}", self.port_out);
     }
 
     fn input(&mut self, rdst: u16) {
