@@ -1,0 +1,30 @@
+#[derive(Debug, Clone, Copy)]
+pub enum OpCode {
+    NOP,
+    HLT,
+    SETC,
+    RET,
+    RTI,
+
+    NOT(u16, u16),
+    INC(u16, u16),
+    OUT(u16),
+    IN(u16),
+    PUSH(u16),
+    POP(u16),
+    JZ(u16),
+    JN(u16),
+    JC(u16),
+    JMP(u16),
+    CALL(u16),
+    INT(u16),
+
+    MOV(u16, u16),
+    ADD(u16, u16, u16),
+    SUB(u16, u16, u16),
+    AND(u16, u16, u16),
+    IADD(u16, u16, i16),
+    LDM(u16, i16),
+    LDD(u16, u16, i16),
+    STD(u16, u16, i16),
+}
